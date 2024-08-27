@@ -1,6 +1,9 @@
 #ifndef __XCB_AUX_H__
 #define __XCB_AUX_H__
 
+#include <stdint.h>
+#include <xcb/xcb.h>
+#include <xcb/xproto.h>
 
 #ifdef __cplusplus
 extern "C" {
