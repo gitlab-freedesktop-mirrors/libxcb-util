@@ -102,7 +102,7 @@ xcb_aux_get_visualtype (xcb_connection_t *c,
 
   depth = xcb_screen_allowed_depths_iterator(screen).data;
   if (!depth) return NULL;
-   
+
    iter = xcb_depth_visuals_iterator(depth);
    for (cur = 0 ; cur < iter.rem ; xcb_visualtype_next(&iter), ++cur)
       if (vid == iter.data->visual_id)
